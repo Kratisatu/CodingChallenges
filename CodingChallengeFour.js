@@ -3,7 +3,7 @@ function NotPosNumException(){}
 function calcAge(num) {
 
     try {
-        num*365
+        //num*365
         if(num<0){
             throw new NotPosNumException();
         } else {
@@ -18,5 +18,5 @@ function calcAge(num) {
 }
 
 console.log(calcAge(65));
-console.log(calcAge(0));
+console.log(calcAge(-1));
 console.log(calcAge(20));
